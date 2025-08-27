@@ -4,10 +4,8 @@
     font-size: 64px;
 }
 
-@media (min-width: 768px) {
-    .h1 {
-        font-size: 120px;
-    }
+.h2 {
+    font-size: 40px;
 }
 
 .paragraph {
@@ -17,14 +15,6 @@
     line-height: 140%;
 }
 
-@media (min-width: 768px) {
-    .paragraph {
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%;
-    }
-}
 
 .regular {
   font-family: var(--font-instrument-sans), sans-serif;
@@ -32,4 +22,40 @@
 
 .rough {
   font-family: var(--font-instrument-serif-rough), serif;
+}
+
+.highlight {
+    display: inline-flex;
+    padding: 0 4px;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    background-color: var(--Accent-Yellow);
+    color: var(--Text-Accent);
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    width: max-content;
+    letter-spacing: 6px;
+}
+
+
+@media (min-width: 768px) {
+    .h1 {
+        font-size: 120px;
+    }
+
+    .h2 {
+        font-size: 72px;
+    }
+
+    .paragraph {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+    }
+    .highlight {
+        font-size: 34px;
+    }
 }

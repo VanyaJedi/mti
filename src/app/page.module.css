@@ -1,11 +1,22 @@
 .headSection {
-  background-image: url("/island-view.png");
+  /* background-image: url("/island-view.png");
   background-size: cover;       
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
+  background: url("/island-view.png") -835.571px -183.265px / 387.306% 124.137% no-repeat;
   display: flex;
   flex-direction: column;
 }
+
+.worthSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.worthHeading {
+  margin-bottom: 16px;
+}
+
 
 @media (min-width: 768px) {
     .headSection {
@@ -16,6 +27,11 @@
         background-position: center;
         align-items: flex-start;
     }
+
+    .worthHeading {
+      margin-bottom: 24px;
+    }
+
 }
 
 .italic {
@@ -31,11 +47,30 @@
   line-height: 100%;
 }
 
+@media (min-width: 768px) {
+  .mainHeading {
+    margin-top: 25px;
+    max-width: 1100px
+  }
+}
+
 .paragraph {
   margin-top: 12px;
   color: var(--Text-Secondary);
 }
 
+@media (min-width: 768px) {
+  .paragraph {
+    max-width: 747px;
+  }
+}
+
 .headButton {
   margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .headButton {
+    margin-top: 84px;
+  }
 }

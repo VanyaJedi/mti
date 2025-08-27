@@ -22,3 +22,12 @@ export const Paragraph = ({
     </p>
   );
 }
+
+
+export const HighlightParagraph = ({ children, className }: { children: React.ReactNode; className?: string }) => {
+    return (
+        <Paragraph fontStyle="rough" className={classNames(s.highlight, className)}>
+            {children}
+        </Paragraph>
+    )
+}

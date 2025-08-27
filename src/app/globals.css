@@ -1,5 +1,6 @@
 :root {
   --background: #ffffff;
+  --BG-Primary: #191919;
   --Text-Primary: #fff;
   --Text-Secondary: #EEECE8;
   --Accent-Yellow: #FFD300;
@@ -24,7 +25,7 @@ body {
 
 body {
   color: var(--Text-Primary);
-  background: var(--background);
+  background: var(--BG-Primary);
   font-family: var(--font-instrument-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
