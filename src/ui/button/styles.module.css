@@ -1,0 +1,29 @@
+.button {
+    display: flex;
+    padding: 14px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    background: var(--Accent-Yellow);
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--Text-Accent);
+}
+
+/* hover + disabled states */
+.button:hover .button:active {
+  background: #EB0;
+}
+.button:disabled {
+  background-color:  var(--Grayscale-40);
+  cursor: not-allowed;
+  color: var(--Text-Disabled)
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 18px;
+  }
+}

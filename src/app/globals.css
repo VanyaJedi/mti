@@ -1,5 +1,11 @@
 :root {
   --background: #ffffff;
+  --Text-Primary: #fff;
+  --Text-Secondary: #EEECE8;
+  --Accent-Yellow: #FFD300;
+  --Text-Disabled: #848587;
+  --Grayscale-40: #4D4D4D;
+  --Text-Accent: #191919;
   --foreground: #171717;
 }
 
@@ -17,9 +23,9 @@ body {
 }
 
 body {
-  color: var(--foreground);
+  color: var(--Text-Primary);
   background: var(--background);
-  font-family: var(--font-instrument-serif-rough), serif-rough;
+  font-family: var(--font-instrument-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

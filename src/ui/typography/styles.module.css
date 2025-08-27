@@ -1,0 +1,35 @@
+
+
+.h1 {
+    font-size: 64px;
+}
+
+@media (min-width: 768px) {
+    .h1 {
+        font-size: 120px;
+    }
+}
+
+.paragraph {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+@media (min-width: 768px) {
+    .paragraph {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+    }
+}
+
+.regular {
+  font-family: var(--font-instrument-sans), sans-serif;
+}
+
+.rough {
+  font-family: var(--font-instrument-serif-rough), serif;
+}

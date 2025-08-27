@@ -1,0 +1,41 @@
+.headSection {
+  background-image: url("/island-view.png");
+  background-size: cover;       
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .headSection {
+        background-image: url("/decorative-dash-line.png"), url("/island-view.png");
+        background-size: contain, cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: top center, center;
+        background-position: center;
+        align-items: flex-start;
+    }
+}
+
+.italic {
+  font-style: italic;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.mainHeading {
+  margin-top: 86px;
+  line-height: 100%;
+}
+
+.paragraph {
+  margin-top: 12px;
+  color: var(--Text-Secondary);
+}
+
+.headButton {
+  margin-top: auto;
+}
