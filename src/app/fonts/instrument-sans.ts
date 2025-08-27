@@ -14,3 +14,25 @@ export const instrumentSans = localFont({
   variable: "--font-instrument-sans",
   display: "swap",
 });
+
+export const instrumentSerifRough = localFont({
+  src: [
+    {
+      path: "./Instrument_Serif_Rough/instrumentserifrough-rough-webfont.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./Instrument_Serif_Rough/instrumentserifrough-rough-webfont.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./Instrument_Serif_Rough/InstrumentSerifRough-Rough.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-instrument-serif-rough",
+  display: "swap",
+});
