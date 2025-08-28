@@ -1,8 +1,4 @@
 .headSection {
-  /* background-image: url("/island-view.png");
-  background-size: cover;       
-  background-repeat: no-repeat;
-  background-position: center; */
   background: url("/island-view.png") -835.571px -183.265px / 387.306% 124.137% no-repeat;
   display: flex;
   flex-direction: column;
@@ -11,7 +7,12 @@
 .page .worthSection {
   display: flex;
   flex-direction: column;
-  margin-bottom: 92px;
+}
+
+
+.videoSection {
+  display: flex;
+  flex-direction: column;
 }
 
 .cards {
@@ -26,6 +27,7 @@
   height: 600px;
   background: url("/kick.png") -7.211px -57.145px / 194.919% 111.429% no-repeat;
   border-radius: 16px;
+  margin-bottom: 29px;
 }
 
 .optional {
@@ -43,7 +45,48 @@
   right: 32px;
 }
 
+.mainHeading {
+  margin-top: 86px;
+  line-height: 100%;
+}
+
+.paragraph {
+  margin-top: 12px;
+  color: var(--Text-Secondary);
+}
+
+.headButton {
+  margin-top: auto;
+}
+
+
+
+@media (min-width: 376px) {
+
+    .headSection {
+      background: none;
+      background-image: url("/island-view.png");
+      background-size: cover;       
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .videoImage {
+      position: relative;
+      height: 600px;
+      background: none;
+      border-radius: 16px;
+      background-image: url("/kick.png");
+      background-size: cover;       
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+
+}
+
 @media (min-width: 768px) {
+
     .headSection {
         background-image: url("/decorative-dash-line.png"), url("/island-view.png");
         background-size: contain, cover;
@@ -58,6 +101,30 @@
       margin-top: 42px;
     }
 
+    .mainHeading {
+      margin-top: 25px;
+      max-width: 1100px
+    }
+
+    .paragraph {
+      max-width: 747px;
+    }
+
+    .headButton {
+      margin-top: 84px;
+    }
+
+    .videoImage {
+      width: 657px;
+      height: 728px;
+    }
+
+    .videoSection {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+    }
 }
 
 .italic {
@@ -66,37 +133,4 @@
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.mainHeading {
-  margin-top: 86px;
-  line-height: 100%;
-}
-
-@media (min-width: 768px) {
-  .mainHeading {
-    margin-top: 25px;
-    max-width: 1100px
-  }
-}
-
-.paragraph {
-  margin-top: 12px;
-  color: var(--Text-Secondary);
-}
-
-@media (min-width: 768px) {
-  .paragraph {
-    max-width: 747px;
-  }
-}
-
-.headButton {
-  margin-top: auto;
-}
-
-@media (min-width: 768px) {
-  .headButton {
-    margin-top: 84px;
-  }
 }

@@ -78,6 +78,14 @@ export default async function Home() {
               </HighlightParagraph>
               <IconWrapper className={s.playIcon} style="dark"><PlayIcon /></IconWrapper>
             </div>
+            <div>
+              <Heading className={s.worthHeading} fontStyle="rough" level={2}>
+                Keep the Memory Alive
+              </Heading>
+              <Paragraph className={s.paragraph}>
+                A beautifully filmed, professionally edited video of your session — dynamic, atmospheric, and unforgettable. Available as an optional add-on.
+              </Paragraph>
+            </div>
         </Section>
       
       </main>
