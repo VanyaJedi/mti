@@ -1,11 +1,13 @@
 :root {
   --background: #ffffff;
   --BG-Primary: #191919;
+  --BG-Secondary: #2B2B2A;
   --Text-Primary: #fff;
   --Text-Secondary: #EEECE8;
   --Accent-Yellow: #FFD300;
   --Text-Disabled: #848587;
   --Grayscale-40: #4D4D4D;
+  --Grayscale-0: #FFF;
   --Text-Accent: #191919;
   --foreground: #171717;
 }

@@ -4,10 +4,33 @@ import { Section } from "@/ui/section/Section";
 import { Heading } from "@/ui/typography/Heading";
 import { Button } from "@/ui/button/Button";
 import { isMobileServer } from "@/features/device-detector/device-detector.server";
+import { Card } from "@/ui/card/Card";
+import { CleanIcon, CrownIcon, SupportIcon, TargetIcon } from "@/ui/icons";
+
+
+const cards = [
+  {
+    icon: <TargetIcon />,
+    text: "Fully personalized training tailored to you",
+  },
+  {
+    icon: <CrownIcon />,
+    text: "Suitable for all levels - from beginner to pro",
+  },
+  {
+    icon: <CleanIcon />,
+    text: "Clean, fully sanitized equipment provided",
+  },
+  {
+    icon: <SupportIcon />,
+    text: "Automatic confirmation and Support 24/7",
+  }, 
+
+]
 
 export default async function Home() {
   const isMobile = await isMobileServer();
-console.log(isMobile);
+
   return (
     <div className={s.page}>
       <main>
@@ -39,7 +62,13 @@ console.log(isMobile);
               </HighlightParagraph>
             </>
           }
-         
+          <div className={s.cards}>
+            {
+              cards.map((card, i) => (
+                <Card key={i} icon={card.icon} text={card.text} />
+              ))
+            }
+          </div>
         </Section>
       
       </main>

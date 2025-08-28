@@ -1,0 +1,19 @@
+.iconWrapper {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--BG-Secondary);
+    background-color: var(--Grayscale-0);
+    border-radius: 50%;
+}
+
+
+@media (min-width: 768px) {
+    .iconWrapper {
+        width: 48px;
+        height: 48px;
+    }
+}

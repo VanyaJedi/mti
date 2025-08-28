@@ -13,10 +13,12 @@
   flex-direction: column;
 }
 
-.worthHeading {
-  margin-bottom: 16px;
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 22px;
 }
-
 
 @media (min-width: 768px) {
     .headSection {
@@ -28,8 +30,9 @@
         align-items: flex-start;
     }
 
-    .worthHeading {
-      margin-bottom: 24px;
+    .cards {
+      flex-direction: row;
+      margin-top: 42px;
     }
 
 }
