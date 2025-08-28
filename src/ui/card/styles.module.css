@@ -15,6 +15,7 @@
 
 .text {
     max-width: 204px;
+    line-height: 22px;
 }
 
 @media (min-width: 768px) {

@@ -10,6 +10,16 @@
     border-radius: 50%;
 }
 
+.light {
+    color: var(--BG-Secondary);
+    background-color: var(--Grayscale-0);
+}
+
+.dark {
+    color: var(--Text-Primary);
+    background-color: var(--BG-Primary);
+}
+
 
 @media (min-width: 768px) {
     .iconWrapper {

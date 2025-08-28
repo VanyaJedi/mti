@@ -5,8 +5,9 @@ import s from "./styles.module.css";
 type IconWrapperProps = {
   children: React.ReactNode;
   className?: string;
+  style?: 'light' | 'dark'
 };
 
-export const IconWrapper: React.FC<IconWrapperProps> = ({ children, className }) => {
-  return <div className={classNames(s.iconWrapper, className)}>{children}</div>;
+export const IconWrapper: React.FC<IconWrapperProps> = ({ children, className, style="light" }) => {
+  return <div className={classNames(s.iconWrapper, className, s[style])}>{children}</div>;
 };

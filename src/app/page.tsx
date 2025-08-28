@@ -5,7 +5,8 @@ import { Heading } from "@/ui/typography/Heading";
 import { Button } from "@/ui/button/Button";
 import { isMobileServer } from "@/features/device-detector/device-detector.server";
 import { Card } from "@/ui/card/Card";
-import { CleanIcon, CrownIcon, SupportIcon, TargetIcon } from "@/ui/icons";
+import { CleanIcon, CrownIcon, PlayIcon, SupportIcon, TargetIcon } from "@/ui/icons";
+import { IconWrapper } from "@/ui/icons/IconWrapper";
 
 
 const cards = [
@@ -69,6 +70,14 @@ export default async function Home() {
               ))
             }
           </div>
+        </Section>
+        <Section className={s.videoSection}>
+            <div className={s.videoImage}>
+              <HighlightParagraph className={s.optional}>
+                optional
+              </HighlightParagraph>
+              <IconWrapper className={s.playIcon} style="dark"><PlayIcon /></IconWrapper>
+            </div>
         </Section>
       
       </main>

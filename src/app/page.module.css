@@ -8,9 +8,10 @@
   flex-direction: column;
 }
 
-.worthSection {
+.page .worthSection {
   display: flex;
   flex-direction: column;
+  margin-bottom: 92px;
 }
 
 .cards {
@@ -18,6 +19,28 @@
   flex-direction: column;
   gap: 8px;
   margin-top: 22px;
+}
+
+.videoImage {
+  position: relative;
+  height: 600px;
+  background: url("/kick.png") -7.211px -57.145px / 194.919% 111.429% no-repeat;
+  border-radius: 16px;
+}
+
+.optional {
+  position: absolute;
+  top: 23px;
+  left: 18px;
+  transform: rotate(-4deg);
+}
+
+.videoImage .playIcon {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  bottom: 32px;
+  right: 32px;
 }
 
 @media (min-width: 768px) {
