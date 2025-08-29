@@ -1,19 +1,18 @@
-
-
-import { IconWrapper } from '../icons/IconWrapper';
-import s from './styles.module.css';
+import React from "react";
+import classNames from "classnames";
+import s from "./styles.module.css";
 
 type Props = {
-    icon: React.ReactNode;
-    text: React.ReactNode;
-}
+  top: React.ReactNode;
+  bottom: React.ReactNode;
+  className?: string;
+};
 
-export const Card = ({ icon, text }: Props) => {
-
-    return (
-        <article className={s.card}>
-            <IconWrapper>{icon}</IconWrapper>
-            <div className={s.text}>{text}</div>
-        </article>
-    )
-}
+export const Card = ({ top, bottom, className }: Props) => {
+  return (
+    <article className={classNames(s.card, className)}>
+      {top}
+      {bottom}
+    </article>
+  );
+};

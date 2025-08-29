@@ -37,7 +37,6 @@
     border-radius: 4px;
     margin-bottom: 4px;
     width: max-content;
-    letter-spacing: 6px;
 }
 
 
@@ -58,6 +57,5 @@
     }
     .highlight {
         font-size: 34px;
-        letter-spacing: 10px;
     }
 }

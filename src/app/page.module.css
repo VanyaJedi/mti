@@ -15,6 +15,10 @@
   flex-direction: column;
 }
 
+.highlight {
+  letter-spacing: 6px;
+}
+
 .cards {
   display: flex;
   flex-direction: column;
@@ -27,7 +31,7 @@
   height: 600px;
   background: url("/kick.png") -7.211px -57.145px / 194.919% 111.429% no-repeat;
   border-radius: 16px;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
 }
 
 .optional {
@@ -51,7 +55,7 @@
 }
 
 .paragraph {
-  margin-top: 12px;
+  margin-top: 2px;
   color: var(--Text-Secondary);
 }
 
@@ -59,6 +63,32 @@
   margin-top: auto;
 }
 
+.cardText {
+  max-width: 204px;
+  line-height: 22px;
+}
+
+.cardWorth {
+   width: 100%;
+}
+
+.cardBook {
+  width: 100%;
+}
+
+.bookBtn {
+  text-transform: uppercase;
+  margin-left: auto;
+  font-size: 14px;
+}
+
+.highlightBooking {
+  letter-spacing: 3px;
+}
+
+.bookinCards {
+  margin-top: 22px;
+}
 
 
 @media (min-width: 376px) {
@@ -106,6 +136,11 @@
       max-width: 1100px
     }
 
+    .highlight {
+      letter-spacing: 10px;
+    }
+
+
     .paragraph {
       max-width: 747px;
     }
@@ -117,6 +152,7 @@
     .videoImage {
       width: 657px;
       height: 728px;
+      margin-bottom: 0;
     }
 
     .videoSection {
@@ -124,6 +160,15 @@
       display: flex;
       flex-direction: row;
       gap: 40px;
+    }
+
+    .cardWorth {
+      width: 324px;
+      height: 300px;
+    }
+
+    .bookinCards {
+      margin-top: auto;
     }
 }
 
