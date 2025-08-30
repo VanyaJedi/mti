@@ -2,12 +2,18 @@
   width: 100%;
   margin: 0 auto;
   padding: 60px 16px;
-  min-height: 780px;
+  
 }
 
 @media (min-width: 768px) {
   .section {
-    min-height: 800;
     padding: 100px 60px;
   }
 }
+
+@media (min-width: 1280px) { 
+  .section { 
+    max-width: 90%; 
+  } 
+}
+

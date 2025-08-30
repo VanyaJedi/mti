@@ -31,7 +31,7 @@ export const instrumentSerifRough = localFont({
       path: "./Instrument_Serif_Rough/InstrumentSerifRough-Rough.ttf",
       weight: "400",
       style: "normal",
-    },
+    }
   ],
   variable: "--font-instrument-serif-rough",
   display: "swap",

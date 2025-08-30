@@ -1,0 +1,36 @@
+
+
+.galleryGroup {
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 260px;
+    border-radius: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+.tab {
+    all: unset;
+}
+
+
+@media (min-width: 768px) {
+  .image {
+    padding: 32px;
+    height: 780px;
+  }
+
+  .tabs {
+    position: absolute;
+  }
+}

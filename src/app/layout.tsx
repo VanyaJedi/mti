@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { detectDeviceServer } from "@/features/device-detector/device-detector.server";
-import { DeviceProvider } from "@/features/device-detector/device-provider";
+import { detectDeviceServer } from "@/features/device-detector/deviceDetector.server";
+import { DeviceProvider } from "@/features/device-detector/deviceProvider";
 import { instrumentSans, instrumentSerifRough } from "./fonts/instrument-sans";
 
 

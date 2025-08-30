@@ -1,7 +1,12 @@
-.headSection {
+
+.headSectionWrapper {
   background: url("/island-view.png") -835.571px -183.265px / 387.306% 124.137% no-repeat;
+}
+
+.headSection {
   display: flex;
   flex-direction: column;
+  min-height: 780px;
 }
 
 .page .worthSection {
@@ -24,6 +29,7 @@
   flex-direction: column;
   gap: 8px;
   margin-top: 22px;
+  height: auto;
 }
 
 .videoImage {
@@ -93,35 +99,47 @@
 
 @media (min-width: 376px) {
 
-    .headSection {
-      background: none;
-      background-image: url("/island-view.png");
-      background-size: cover;       
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  .headSectionWrapper {
+    background: none;
+    background-image: url("/island-view.png");
+    background-size: cover;       
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-    .videoImage {
-      position: relative;
-      height: 600px;
-      background: none;
-      border-radius: 16px;
-      background-image: url("/kick.png");
-      background-size: cover;       
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+
+  .headSection {
+
+    min-height: 800;
+  }
+
+  .videoImage {
+    position: relative;
+    height: 600px;
+    background: none;
+    border-radius: 16px;
+    background-image: url("/kick.png");
+    background-size: cover;       
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
 
 }
 
 @media (min-width: 768px) {
 
+    .headSectionWrapper {
+      background: none;
+      background-image: url("/decorative-dash-line.png"), url("/island-view.png");
+      background-size: contain, cover;
+      background-repeat: no-repeat, no-repeat;
+      background-position: top center, center;
+    }
+
+
     .headSection {
-        background-image: url("/decorative-dash-line.png"), url("/island-view.png");
-        background-size: contain, cover;
-        background-repeat: no-repeat, no-repeat;
-        background-position: top center, center;
+
         background-position: center;
         align-items: flex-start;
     }
@@ -150,7 +168,7 @@
     }
 
     .videoImage {
-      width: 657px;
+      width: 791px;
       height: 728px;
       margin-bottom: 0;
     }
