@@ -10,6 +10,7 @@
     font-size: 14px;
     font-weight: 700;
     color: var(--Text-Accent);
+    text-transform: uppercase;
 }
 
 /* hover + disabled states */

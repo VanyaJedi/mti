@@ -30,7 +30,25 @@
     height: 780px;
   }
 
+  .image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+
+    /* wide inner shadow overlay */
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.6);
+    pointer-events: none; /* so it doesn’t block buttons/text */
+    }
+
   .tabs {
     position: absolute;
+    bottom: 32px;
+    padding: 0 32px;
+    font-size: 16px;
+  }
+
+  .tabActive {
+    border-top: white 4px solid;
   }
 }

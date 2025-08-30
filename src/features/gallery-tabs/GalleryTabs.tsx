@@ -9,6 +9,7 @@ import { useIsMobile } from '../device-detector/deviceProvider';
 import { Heading } from '@/ui/typography/Heading';
 import { Flex } from '@/ui/flex/Flex';
 import { Button } from '@/ui/button/Button';
+import classNames from 'classnames';
 
 const galleryItems = [
   {
@@ -88,7 +89,7 @@ export const GalleryTabs = () => {
               galleryItems.map((item) => (
                 <TabPanel className={s.panel} key={item.id}>
                   <div className={s.image} style={{ backgroundImage: `url(${item.image})` }}>
-                    <Flex justify="between">
+                    <Flex justify="between" align="center">
                       <Heading className={s.worthHeading} fontStyle="rough" level={2}>
                         Elite level Trainers 
                       </Heading>
@@ -105,7 +106,7 @@ export const GalleryTabs = () => {
           <TabList className={s.tabs}>
             {
               galleryItems.map((item, i) => (
-                <Tab className={s.tab} key={item.id}/>
+                <Tab className={classNames(s.tab,{ [s.tabActive]: selectedIndex === i } )} key={item.id}><Paragraph>{item.text}</Paragraph></Tab>
               ))
             }
           </TabList>
